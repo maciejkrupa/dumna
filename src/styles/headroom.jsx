@@ -18,23 +18,16 @@ const headroom = css`
     }
   }
   .headroom--unfixed {
-    transition: all 0.35s ease-out;
-    @media (max-width: ${theme.breakpoints.m}) {
-    }
-    @media (min-width: ${theme.breakpoints.m}) {
-    }
+    transform: translateY(0%);
   }
   .headroom--scrolled {
-    transition: all 0.35s ease-out;
+    transform: translateY(0%);
   }
   .headroom--unpinned {
-    transform: translateY(-105%);
-    transition: all 0.35s ease-out;
-  }
+    transform: translateY(0%);
   }
   .headroom--pinned {
     transform: translateY(0%);
-    transition: all 0.35s ease-out;
   }
 `
 
