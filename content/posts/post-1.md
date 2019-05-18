@@ -1,6 +1,7 @@
 ---
 path: "/post_one"
 cover: "../images/ogrod1_01.jpg"
+hero: "../images/ogrod1_02.jpg"
 order: "1"
 title: "Ogród Botaniczny Uniwersytetu Wrocławskiego"
 ---

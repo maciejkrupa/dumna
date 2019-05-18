@@ -1,6 +1,7 @@
 ---
 path: "/post_three"
 cover: "../images/licytacja_01.jpg"
+hero: "../images/licytacja_02.jpg"
 order: "3"
 title: "Licytacja obrazów malarzy"
 ---

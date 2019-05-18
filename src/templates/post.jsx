@@ -38,7 +38,7 @@ const PostSuggestion = styled.div`
 const Post = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
   const post = data.markdownRemark;
-  const cover = post.frontmatter.cover.childImageSharp.fluid;
+  const hero = post.frontmatter.hero.childImageSharp.fluid;
   const title = post.frontmatter.title;
   const order = post.frontmatter.order;
   const html = post.html;
@@ -76,9 +76,8 @@ const Post = ({ data, pageContext }) => {
         <Container>
           <BackgroundImage 
             Tag="section"
-            fluid={cover}
-            style={{ 
-              position: `relative`,
+            fluid={hero}
+            style={{
               height: `500px`,
               width: `100%`,
               }} >
@@ -125,11 +124,11 @@ export const query = graphql`
       frontmatter {
         title
         order
-        cover {
+        hero {
           childImageSharp {
             fluid(
-              maxHeight: 2000 
-              maxWidth: 1200 
+              maxHeight: 500 
+              maxWidth: 1100 
               quality: 90
             ) {
               ...GatsbyImageSharpFluid_withWebp
