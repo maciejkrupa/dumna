@@ -62,28 +62,3 @@ class GalleryPostSix extends React.Component {
 }
 
 export default GalleryPostSix;
-
-// import React from "react";
-// import Gallery from 'react-photo-gallery';
-
-// class ExampleBasic extends React.Component {
-//   render(){
-//     const photos = [
-//       {
-//         src: 'https://i.imgur.com/NhRUoOD.jpg',
-//         width: 4,
-//         height: 3
-//       },
-//       {
-//         src: 'https://i.imgur.com/NhRUoOD.jpg',
-//         width: 1,
-//         height: 1
-//       }
-//     ];
-//     return (
-//       <Gallery photos={photos} />
-//     );
-//   }
-// }
-
-// export default ExampleBasic;

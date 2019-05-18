@@ -105,21 +105,4 @@ const NavBar = () => (
     </Headroom>
 );
 
-export default NavBar
-
-// position: relative;
-// font-weight: 400;
-// height: 50px;
-// background: transparent;
-// float: right;
-// direction: rtl;
-// margin-right: 25%;
-// font-size: 1rem;
-
-// position: relative;
-//         font-family: "Domine";
-//         color: #ac8d64;
-//         transition: all 0.25s ease-out
-//         width: 100%;
-//         display: table;
-//         overflow: hidden;
+export default NavBar;

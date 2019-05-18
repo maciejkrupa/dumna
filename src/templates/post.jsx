@@ -47,6 +47,7 @@ const HeroTitle = styled.h2`
   left: 2%;
   top: 83%;
   font-size: 1.2rem;
+  z-index: 100;
   @media screen and (min-width: 700px) {
     font-size: 1.8rem;
   }
@@ -55,6 +56,16 @@ const HeroTitle = styled.h2`
   }
   position: relative;   
 `;
+
+const HeroWrap = styled.div`
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+  position: relative;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+`
+
 
 
 const Post = ({ data, pageContext }) => {
@@ -78,6 +89,7 @@ const Post = ({ data, pageContext }) => {
               marginBottom: `20px`,
               }} >
               <HeroTitle>{title}</HeroTitle>
+              <HeroWrap />
           </BackgroundImage>
           <Content input={html} />
           <GalleryPostSix />
@@ -117,6 +129,7 @@ const Post = ({ data, pageContext }) => {
               marginBottom: `20px`,
               }} >
               <HeroTitle>{title}</HeroTitle>
+              <HeroWrap />
           </BackgroundImage>
           <Content input={html} />
         </Container>
