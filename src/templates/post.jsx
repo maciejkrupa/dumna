@@ -21,6 +21,7 @@ const SuggestionBar = styled.div`
   flex-wrap: nowrap;
   justify-content: space-between;
 `;
+
 const PostSuggestion = styled.div`
   display: flex;
   width: 50%;
@@ -34,23 +35,10 @@ const PostSuggestion = styled.div`
   max-height: 85px;
 `;
 
-const Title = styled.h1`
-  position: absolute;
-  bottom: 0px;
-  left: 16px;
-`
-
-const ImgWrapper = styled.div`
-  position: relative;
-  text-align: left;
-  color: #fff;
-  }
-`
-
 const Post = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
   const post = data.markdownRemark;
-  const image = post.frontmatter.cover.childImageSharp.fluid;
+  const hero = post.frontmatter.hero.childImageSharp.fluid;
   const title = post.frontmatter.title;
   const order = post.frontmatter.order;
   const html = post.html;
@@ -86,14 +74,12 @@ const Post = ({ data, pageContext }) => {
     return (
       <Layout>
         <Container>
-          <BackgroundImage Tag="section"
-
-            fluid={image}
-            style={{ 
-              position: `relative`,
+          <BackgroundImage 
+            Tag="section"
+            fluid={hero}
+            style={{
               height: `500px`,
               width: `100%`,
-
               }} >
           </BackgroundImage>
           <Content input={html} />
@@ -138,11 +124,13 @@ export const query = graphql`
       frontmatter {
         title
         order
-        cover {
+        hero {
           childImageSharp {
             fluid(
               maxHeight: 1100 
               maxWidth: 420 
+              maxHeight: 500 
+              maxWidth: 1100 
               quality: 90
             ) {
               ...GatsbyImageSharpFluid_withWebp

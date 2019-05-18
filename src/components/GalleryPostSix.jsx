@@ -1,5 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
 import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
 import przedstawienia_01 from '../../static/gallery/przedstawienia_01.jpg';

@@ -1,9 +1,11 @@
 ---
 path: "/post_two"
-cover: "../images/ogrod-2.jpg"
+cover: "../images/ogrod2_01.jpg"
+hero: "../images/ogrod2_02.jpg"
 order: "2"
 title: "Oficjalne otwarcie Ogrodu Botanicznego Uniwersytetu Wrocławskiego"
 ---
+
 Dnia 29.03.2019 roku, w Oratorium Marianum, barokowej sali muzeum Uniwersytetu Wrocławskiego, odbyło się uroczyste otwarcie Sezonu 2019 w Ogrodzie Botanicznym, w połączeniu z wystawą 17 prac artystów Justyny Williams i Benjamina Frauendorff'a, zainspirowanych motywami naturalnego piękna Ogrodu.
 
 Wydarzenie zorganizowała Fundacja DUMNA.PL przy ścisłym współdziałaniu najwyższych Władz Uniwersytetu Wrocławskiego, Dyrekcji Ogrodu Botanicznego, Fundacji “Pomóżmy Dzieciom Niepełnosprawnym w Wierzbicach i Osobom Starszym” ( Fundacja zmienia nazwę na: Pomóżmy Osobom Niepełnosprawnym i Starszym )

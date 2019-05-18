@@ -1,9 +1,11 @@
 ---
 path: "/post_five"
-cover: "../images/projekt.jpg"
+cover: "../images/projekt_01.jpg"
+hero: "../images/projekt_02.jpg"
 order: "5"
 title: "Projekt: „Jeden Świat: bezpieczeństwo osób niepełnosprawnych w sytuacjach kryzysowych wywołanych czynnikami zewnętrznymi”"
 ---
+
 *Fundacja “Pomóżmy Dzieciom Niepełnosprawnym w Wierzbicach i Osobom Starszym”* oraz *Fundacja DUMNA.PL w Warszawie* działając na podstawie zarejestrowanego statutu, a w szczególności § 8, punkty:
 **d**. *ochrony i promocji zdrowia, w tym działalność lecznicza;*
 **e**. *działania na rzecz osób niepełnosprawnych;*
