@@ -1,0 +1,44 @@
+{
+  "name": "dumna",
+  "version": "1.0.0",
+  "description": "Strona fundacji.",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "author": "Maciej Krupa",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled-base": "^10.0.10",
+    "emotion": "^10.0.9",
+    "emotion-theming": "^10.0.10",
+    "gatsby": "^2.3.32",
+    "gatsby-background-image": "^0.5.0",
+    "gatsby-image": "^2.0.40",
+    "gatsby-plugin-catch-links": "^2.0.13",
+    "gatsby-plugin-emotion": "^4.0.6",
+    "gatsby-plugin-sharp": "^2.0.35",
+    "gatsby-plugin-typography": "^2.2.13",
+    "gatsby-remark-images": "^3.0.11",
+    "gatsby-source-filesystem": "^2.0.33",
+    "gatsby-transformer-remark": "^2.3.12",
+    "gatsby-transformer-sharp": "^2.1.18",
+    "react": "^16.8.6",
+    "react-burger-menu": "^2.6.10",
+    "react-dom": "^16.8.6",
+    "react-headroom": "^2.2.8",
+    "react-image-gallery": "^0.8.16",
+    "react-images": "^0.5.19",
+    "react-photo-gallery": "^7.0.2",
+    "react-typography": "^0.16.19",
+    "sharp": "^0.22.1",
+    "typography": "^0.16.19",
+    "typography-theme-alton": "^0.16.19",
+    "yarn": "^1.16.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

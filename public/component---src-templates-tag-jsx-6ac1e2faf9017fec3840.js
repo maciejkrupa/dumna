@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{156:function(t,e,n){"use strict";n.r(e);var i=n(8),u=(n(0),n(60));e.default=function(t){var e=t.pageContext,n=e.posts,c=e.tagName;return Object(i.d)("div",null,Object(i.d)("div",null,"Co cię interesuje? ",""+c),Object(i.d)("div",null,Object(i.d)("ul",null,n.map(function(t,e){return Object(i.d)("li",{key:e},Object(i.d)(u.Link,{to:t.frontmatter.path},t.frontmatter.title))}))))}}}]);
+//# sourceMappingURL=component---src-templates-tag-jsx-6ac1e2faf9017fec3840.js.map

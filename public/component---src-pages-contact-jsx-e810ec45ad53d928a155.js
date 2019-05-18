@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{159:function(n,t,u){"use strict";u.r(t);var c=u(8);u(0);t.default=function(){return Object(c.d)("div",null,Object(c.d)("h1",null,"Kontakt"),Object(c.d)("p",null,"Skontaktuj się z nami!"))}}}]);
+//# sourceMappingURL=component---src-pages-contact-jsx-e810ec45ad53d928a155.js.map
