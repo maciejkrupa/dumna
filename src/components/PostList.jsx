@@ -116,10 +116,10 @@ const Title = styled.h2`
   max-height: 64px;      
 `;
 
-const PostList = ({ cover, path, title }) => (
+const PostList = ({ hero, path, title }) => (
   <Wrapper className="post_wrapper">
     <Image>
-      <Img fluid={cover} />
+      <Img fluid={hero} />
     </Image>
     <StyledLink to={path}>
       <Info>
@@ -132,7 +132,7 @@ const PostList = ({ cover, path, title }) => (
 export default PostList;
 
 PostList.propTypes = {
-  cover: PropTypes.object.isRequired,
+  hero: PropTypes.object.isRequired,
   path: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };

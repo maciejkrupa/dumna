@@ -24,7 +24,7 @@ const Index = ({ data }) => {
         {edges.map(({ node }) => (
           <PostList
             key={node.id}
-            cover={node.frontmatter.cover.childImageSharp.fluid}
+            hero={node.frontmatter.hero.childImageSharp.fluid}
             path={node.frontmatter.path}
             title={node.frontmatter.title}
           />
@@ -44,7 +44,7 @@ Index.propTypes = {
           node: PropTypes.shape({
             excerpt: PropTypes.string,
             frontmatter: PropTypes.shape({
-              cover: PropTypes.object.isRequired,
+              hero: PropTypes.object.isRequired,
               path: PropTypes.string.isRequired,
               title: PropTypes.string.isRequired,
             }),
@@ -69,10 +69,10 @@ export const query = graphql`
             title
             order
             path
-            cover {
+            hero {
               childImageSharp {
                 fluid(
-                  maxWidth: 1000
+                  maxWidth: 1100
                   quality: 90
                 ) {
                   ...GatsbyImageSharpFluid_withWebp

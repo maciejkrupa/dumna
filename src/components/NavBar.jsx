@@ -67,8 +67,7 @@ const unFixed = function() {
 
 const NavBar = () => (
     <Headroom id="main_headroom" disableInlineStyles
-    onPin={Pinned} onUnpin={unPinned} onUnfix={unFixed} 
-    fixAnchor={0} pinAnchor={0} hideAnchor={150} >
+    onPin={Pinned} onUnpin={unPinned} onUnfix={unFixed}>
         <Link id="main-header-logo" to="/">
             <Logo id="logo_default" src={logo_default} alt='Dumna Niepodległa Logo' />
         </Link>

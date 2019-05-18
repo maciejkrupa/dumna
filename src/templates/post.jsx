@@ -35,6 +35,28 @@ const PostSuggestion = styled.div`
   max-height: 85px;
 `;
 
+const HeroTitle = styled.h2`
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 32px;       
+  max-height: 64px;   
+  color: #fff;
+  left: 2%;
+  top: 83%;
+  font-size: 1.2rem;
+  @media screen and (min-width: 700px) {
+    font-size: 1.8rem;
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 1.8rem;
+  }
+  position: relative;   
+`;
+
+
 const Post = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
   const post = data.markdownRemark;
@@ -46,6 +68,17 @@ const Post = ({ data, pageContext }) => {
     return (
       <Layout>
         <Container>
+        <BackgroundImage 
+            Tag="section"
+            fluid={hero}
+            style={{
+              height: `420px`,
+              width: `100%`,
+              boxShadow: `0px 3px 10px 0px rgba(0, 0, 0, 0.6) `,
+              marginBottom: `20px`,
+              }} >
+              <HeroTitle>{title}</HeroTitle>
+          </BackgroundImage>
           <Content input={html} />
           <GalleryPostSix />
         </Container>
@@ -78,9 +111,12 @@ const Post = ({ data, pageContext }) => {
             Tag="section"
             fluid={hero}
             style={{
-              height: `500px`,
+              height: `420px`,
               width: `100%`,
+              boxShadow: `0px 3px 10px 0px rgba(0, 0, 0, 0.6) `,
+              marginBottom: `20px`,
               }} >
+              <HeroTitle>{title}</HeroTitle>
           </BackgroundImage>
           <Content input={html} />
         </Container>
@@ -127,7 +163,7 @@ export const query = graphql`
         hero {
           childImageSharp {
             fluid(
-              maxHeight: 500 
+              maxHeight: 420 
               maxWidth: 1100 
               quality: 90
             ) {
