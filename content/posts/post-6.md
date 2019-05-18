@@ -1,6 +1,6 @@
 ---
 path: "/post_six"
-cover: "../images/przedstawienia.jpg"
+cover: "../images/przedstawienia_01.jpg"
 order: "6"
 title: "Przedstawienia „Zawsze na Przedzie”"
 ---

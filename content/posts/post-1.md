@@ -1,8 +1,8 @@
 ---
 path: "/post_one"
-cover: "../images/ogrod-1.jpg"
+cover: "../images/ogrod1_01.jpg"
 order: "1"
-title: "Ogórd Botaniczny Uniwersytetu Wrocławskiego"
+title: "Ogród Botaniczny Uniwersytetu Wrocławskiego"
 ---
 Ogród Botaniczny jest wyspą zieleni, różnorodności i piękna umiejscowioną w centrum miasta, u stóp gotyckich świątyń Ostrowa Tumskiego. Powstał w roku 1811 na gruzach zburzonych fortyfikacji miejskich, stając się pierwszą botaniczną placówką nowo założonego Uniwersytetu Wrocławskiego oraz miejscem odwiedzin miłośników przyrody i ogrodnictwa. Jest drugim pod względem wieku uniwersyteckim ogrodem w Polsce. W roku 1974 został wpisany do rejestru zabytków, a od roku 1994 znajduje się w obrębie historycznego centrum miasta, objętego szczególną ochroną konserwatorską. 
 

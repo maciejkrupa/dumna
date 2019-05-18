@@ -1,6 +1,6 @@
 ---
 path: "/post_four"
-cover: "../images/pocztowki.jpg"
+cover: "../images/pocztowki_01.jpg"
 order: "4"
 title: "Sprzedaż pocztówek w Ogrodzie Botanicznym we Wrocławiu oraz w naszym sklepie internetowym"
 ---

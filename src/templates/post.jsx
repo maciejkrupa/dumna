@@ -21,6 +21,7 @@ const SuggestionBar = styled.div`
   flex-wrap: nowrap;
   justify-content: space-between;
 `;
+
 const PostSuggestion = styled.div`
   display: flex;
   width: 50%;
@@ -34,23 +35,10 @@ const PostSuggestion = styled.div`
   max-height: 85px;
 `;
 
-const Title = styled.h1`
-  position: absolute;
-  bottom: 0px;
-  left: 16px;
-`
-
-const ImgWrapper = styled.div`
-  position: relative;
-  text-align: left;
-  color: #fff;
-  }
-`
-
 const Post = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
   const post = data.markdownRemark;
-  const image = post.frontmatter.cover.childImageSharp.fluid;
+  const cover = post.frontmatter.cover.childImageSharp.fluid;
   const title = post.frontmatter.title;
   const order = post.frontmatter.order;
   const html = post.html;
@@ -86,14 +74,13 @@ const Post = ({ data, pageContext }) => {
     return (
       <Layout>
         <Container>
-          <BackgroundImage Tag="section"
-
-            fluid={image}
+          <BackgroundImage 
+            Tag="section"
+            fluid={cover}
             style={{ 
               position: `relative`,
               height: `500px`,
               width: `100%`,
-
               }} >
           </BackgroundImage>
           <Content input={html} />
