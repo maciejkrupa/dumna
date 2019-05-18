@@ -127,8 +127,6 @@ export const query = graphql`
         hero {
           childImageSharp {
             fluid(
-              maxHeight: 1100 
-              maxWidth: 420 
               maxHeight: 500 
               maxWidth: 1100 
               quality: 90
