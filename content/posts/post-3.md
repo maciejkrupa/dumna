@@ -4,6 +4,7 @@ cover: "../images/licytacja_01.jpg"
 order: "3"
 title: "Licytacja obrazów malarzy"
 ---
+
 Idea wystawy: 
 
 --- 
