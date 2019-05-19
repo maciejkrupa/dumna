@@ -2,7 +2,7 @@
 path: "/post_seven"
 cover: "../images/koncert_01.jpg"
 hero: "../images/koncert_02.jpg"
-order: "2"
+order: "5"
 title: "Koncerty z okazji Roku Moniuszkowskiego"
 ---
 

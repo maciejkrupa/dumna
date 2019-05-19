@@ -2,7 +2,7 @@
 path: "/post_five"
 cover: "../images/projekt_01.jpg"
 hero: "../images/projekt_02.jpg"
-order: "6"
+order: "7"
 title: "Projekt: „Jeden Świat: bezpieczeństwo osób niepełnosprawnych w sytuacjach kryzysowych wywołanych czynnikami zewnętrznymi”"
 ---
 

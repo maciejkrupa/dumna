@@ -101,7 +101,7 @@ const Post = ({ data, pageContext }) => {
           <PostSuggestion>
             {prev && (
               <Link to={prev.frontmatter.path}>
-                Previous
+                Poprzednie
                 <h3>{prev.frontmatter.title}</h3>
               </Link>
             )}
@@ -109,7 +109,7 @@ const Post = ({ data, pageContext }) => {
           <PostSuggestion>
             {next && (
               <Link to={next.frontmatter.path}>
-                Next
+                Następne
                 <h3>{next.frontmatter.title}</h3>
               </Link>
             )}
