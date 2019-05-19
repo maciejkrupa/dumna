@@ -25,7 +25,7 @@ Oddziałem Ogrodu Botanicznego jest Arboretum Wojsławice w Niemczy (50 km na po
 ![Logo Kolekcji](kolekcje-logo.png "Logo Title Text 1")
 
 
-**Adres: **
+**Adres:**
 Ogród Botaniczny Uniwersytetu Wrocławskiego
 ul. Sienkiewicza 23
 50-335 Wrocław

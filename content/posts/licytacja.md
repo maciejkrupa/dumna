@@ -10,7 +10,7 @@ Idea wystawy:
 
 --- 
 
-*“Ogrodnictwo to coś, czego się nauczyłem w młodości, kiedy byłem nieszczęśliwy. Pewnie zawdzięczam to kwiatom, że zostałem malarzem.” *
+*“Ogrodnictwo to coś, czego się nauczyłem w młodości, kiedy byłem nieszczęśliwy. Pewnie zawdzięczam to kwiatom, że zostałem malarzem.”*
 - Claude Monet zacytowany w Dalenage w 1927 roku. 
 
 ---
@@ -47,7 +47,7 @@ W tym miejscu słowo o artystach, poprzez udostępnienie swoich prac, również 
 
  
 
-**Justyna Williams **
+**Justyna Williams**
 
 *"Poszukiwanie prawdy poprzez twórczość nigdy się nie kończy. Sztuka nic nie musi, a wszystko może"*. Autorka eksploruje możliwości ekspresji, jakie oferuje malarstwo, zapraszając odbiorców w estetyczną podróż pełną niespodzianek.
 
@@ -71,30 +71,48 @@ Autor plasuje do tej pory swoje prace w obrocie ściśle prywatnym.  Wyjątkiem 
 
 Poza relacjami z najbliższymi, to twórczość pozwala mu na realizację życiowego motto…” 
 
- 
+---
 
 W ramach wydarzenia znaleźliśmy okazję do licytacji dwóch z wystawionych prac:
 
->Autor:                  Justyna Williams
->Rok:                    2019
->Miejsce:              Wrocław, Polska
->Tytuł:                  bez tytułu
->Technika:           akryl
->Podłoże:             płótno
->Rozmiar:             80 x 100 cm
+**Autor: Justyna Williams**
+
+Rok: 2019
+
+Miejsce: Wrocław, Polska
+
+Tytuł: bez tytułu
+
+Technika: akryl
+
+Podłoże: płótno
+
+Rozmiar: 80 x 100 cm
+
 Cena wywoławcza: 3 500 PLN
->
->   
->
->Autor:                  Benjamin Frauendorff
->Rok:                      2018
->Miejsce:              Wrocław, Polska
->Tytuł:                    “Ogród i spacer nad Starą Odrą”
->Seria:                    “Zainspirowany Ogród”
->Technika:            techniki mieszane 
->Podłoże:             płótno
->Rozmiar:              100 x 80 cm.
+
+---
+
+**Autor: Benjamin Frauendorff**
+
+Rok: 2018
+
+Miejsce: Wrocław, Polska
+
+Tytuł: “Ogród i spacer nad Starą Odrą”
+
+Seria: “Zainspirowany Ogród”
+
+Technika: techniki mieszane 
+
+Podłoże: płótno
+
+Rozmiar: 100 x 80 cm.
+
 Cena wywoławcza: 3 500 PLN
+
+---
+
 
 Przy cenie wywoławczej PLN 3 500 brutto, obie prace zostały sprzedane za PLN 4 400 brutto. Łączny przychód wyniósł PLN 8 800 brutto. 
 
