@@ -107,7 +107,7 @@ const NavBarMobile = () => (
               O Nas
           </Link>
           <br />
-          <a className="nav-link" href='http://sklep.dumnaniepodlegla.pl/'>
+          <a className="nav-link" href='https://sklep5442686.homesklep.pl'>
               Sklep
           </a>
           <br />

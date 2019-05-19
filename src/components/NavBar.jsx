@@ -91,7 +91,7 @@ const NavBar = () => (
                 O Nas
             </Link>
             <br/>
-            <a href='http://sklep.dumnaniepodlegla.pl/'>
+            <a href='https://sklep5442686.homesklep.pl'>
                 Sklep
             </a>
             <br/>
