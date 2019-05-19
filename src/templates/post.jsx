@@ -45,11 +45,10 @@ const HeroTitle = styled.h2`
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 32px;       
-  max-height: 64px;   
+  max-height: 95px;   
   color: #fff;
-  left: 2%;
-  top: 82%;
   z-index: 100;
+  top: 4px;
   font-size: 1.2rem;
   @media screen and (min-width: 700px) {
     font-size: 1.5rem;
@@ -67,6 +66,13 @@ const HeroWrap = styled.div`
   height: 100%;
   width: 100%;
   opacity: 0.7;
+`
+
+const TitleWrap = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 22px;
 `
 
 
@@ -91,7 +97,9 @@ const Post = ({ data, pageContext }) => {
               boxShadow: `0px 3px 10px 0px rgba(0, 0, 0, 0.6) `,
               marginBottom: `20px`,
               }} >
-              <HeroTitle>{title}</HeroTitle>
+              <TitleWrap>
+                <HeroTitle>{title}</HeroTitle>
+              </TitleWrap>
               <HeroWrap />
           </BackgroundImage>
           <Content input={html} />
@@ -131,7 +139,9 @@ const Post = ({ data, pageContext }) => {
               boxShadow: `0px 3px 10px 0px rgba(0, 0, 0, 0.6) `,
               marginBottom: `20px`,
               }} >
-              <HeroTitle>{title}</HeroTitle>
+              <TitleWrap>
+                <HeroTitle>{title}</HeroTitle>
+              </TitleWrap>
               <HeroWrap />
           </BackgroundImage>
           <Content input={html} />
