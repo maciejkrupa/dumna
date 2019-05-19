@@ -2,7 +2,7 @@
 path: "/post_two"
 cover: "../images/ogrod2_01.jpg"
 hero: "../images/ogrod2_02.jpg"
-order: "2"
+order: "3"
 title: "Oficjalne otwarcie Ogrodu Botanicznego Uniwersytetu Wrocławskiego"
 ---
 

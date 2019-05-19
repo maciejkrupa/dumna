@@ -2,7 +2,7 @@
 path: "/post_six"
 cover: "../images/przedstawienia_01.jpg"
 hero: "../images/przedstawienia_02.jpg"
-order: "6"
+order: "7"
 title: "Przedstawienia „Zawsze na Przedzie”"
 ---
 
