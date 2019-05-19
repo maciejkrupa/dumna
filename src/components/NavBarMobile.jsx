@@ -21,7 +21,7 @@ const Div = styled.div`
 
 const Logo = styled.img`
   position: relative;
-  width: 70%;
+  width: 80%;
   margin-top: 1rem;
   transform: scale(0.75);
   outline: 0;
@@ -61,9 +61,9 @@ var styles = {
       boxShadow: '0px 3px 10px 0px rgba(0,0,0,0.6)',
       position: 'fixed',
       height: '100%',
-      width: '225px',
+      width: '210px',
       zIndex: '3000',
-      left: '-20px'
+      paddingBottom: '20%'
     },
     bmMenu: {
         //padding: '2.5em 1.5em 0',
@@ -79,7 +79,6 @@ var styles = {
       background: 'transparent',
       textAlign: 'center',
       paddingTop: '10px',
-      right: '-5px'
     },
     bmItem: {
       marginTop: '10px',

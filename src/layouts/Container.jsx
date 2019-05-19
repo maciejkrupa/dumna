@@ -3,7 +3,10 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
 const Wrapper = styled.section`
-  text-align: justify;
+  text-align: left;
+  @media screen and (min-width: 700px) {
+    text-align: justify;
+  }
   text-justify: inter-word;
   text-align: ${props => (props.justify ? 'justify' : '')};
   text-align: ${props => (props.interWord ? 'inter-word' : '')};
