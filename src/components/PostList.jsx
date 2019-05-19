@@ -99,7 +99,7 @@ const Image = styled.div`
 
 const Info = styled.div`
   color: ${props => props.theme.colors.white.light};
-  margin: 0 1rem 1.25rem 1.25rem;
+  margin: 0 1rem 0.20rem 1.25rem;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -113,13 +113,13 @@ const Title = styled.h2`
   text-overflow: ellipsis;
   display: -webkit-box;
   line-height: 32px;       
-  max-height: 64px;    
+  max-height: 95px;    
   font-size: 1.2rem;
-  @media screen and (min-width: 700px) {
-    font-size: 1.5rem;
+  @media screen and (min-width: 800px) {
+    font-size: 1.3rem;
   }
-  @media screen and (min-width: 1000px) {
-    font-size: 1.8rem;
+  @media screen and (min-width: 1400px) {
+    font-size: 1.5rem;
   }  
 `;
 
