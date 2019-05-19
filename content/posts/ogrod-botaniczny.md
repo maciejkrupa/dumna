@@ -6,6 +6,7 @@ order: "1"
 title: "Ogród Botaniczny Uniwersytetu Wrocławskiego"
 ---
 
+
 Ogród Botaniczny jest wyspą zieleni, różnorodności i piękna umiejscowioną w centrum miasta, u stóp gotyckich świątyń Ostrowa Tumskiego. Powstał w roku 1811 na gruzach zburzonych fortyfikacji miejskich, stając się pierwszą botaniczną placówką nowo założonego Uniwersytetu Wrocławskiego oraz miejscem odwiedzin miłośników przyrody i ogrodnictwa. Jest drugim pod względem wieku uniwersyteckim ogrodem w Polsce. W roku 1974 został wpisany do rejestru zabytków, a od roku 1994 znajduje się w obrębie historycznego centrum miasta, objętego szczególną ochroną konserwatorską. 
 
 ---
@@ -21,12 +22,11 @@ Zapraszamy do odwiedzenia Ogrodu Botanicznego – romantycznego miejsca, w któ
 Oddziałem Ogrodu Botanicznego jest Arboretum Wojsławice w Niemczy (50 km na południe od Wrocławia), znane od lat z bogatej kolekcji różaneczników i azalii, rzadkich gatunków drzew i krzewów iglastych i liściastych oraz ogrodu bylinowego z największą w Europie kolekcją liliowców (ponad 3 tys. odmian). Do Arboretum należy też wystawa geologiczna GEOretum, Galeria, w której odbywają się wystawy czasowe, i tereny rekreacyjne z placem zabaw dla dzieci.
 
 
-![Logo Ogrodu](ogrod-logo.png "Logo Title Text 1")
+![Logo Kolekcji](kolekcje-logo.png "Logo Title Text 1")
 
 
-| Adres: |
-| --- |
-| Ogród Botaniczny Uniwersytetu Wrocławskiego |
+**Adres: **
+Ogród Botaniczny Uniwersytetu Wrocławskiego
 ul. Sienkiewicza 23
 50-335 Wrocław
 tel. (71) 322 59 57
@@ -41,7 +41,3 @@ Otwarty codziennie od 29 marca do 31 października w godz. 9–19, szklarnie i P
 Wystawa paleontologiczna Panorama Natury, obrazująca rozwój przyrody ożywionej od prekambru do czwartorzędu – seanse co pół godziny od 10 do 17.
 
 Działy: systematyki roślin, arboretum, alpinarium, roślin wodnych i bagiennych, gruntowych roślin ozdobnych, edukacji przyrodniczej; szklarnie ekspozycyjne, akwaria. Najcenniejsze kolekcje: tropikalne rośliny słodkowodne, sukulenty, ananasowate, różaneczniki i azalie, gatunki i odmiany bluszczu, rośliny ozdobne.
-
-
-
-![Logo Kolekcji](kolekcje-logo.png "Logo Title Text 1")
