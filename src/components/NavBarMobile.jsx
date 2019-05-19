@@ -96,10 +96,6 @@ var styles = {
 
 const NavBarMobile = () => (
     <Div>
-        <Helmet>
-          <meta name="viewport" content="minimum-scale=1" data-react-helmet="true" />
-          <title>Fundacja DUMNA.PL</title>
-        </Helmet>
         <Menu styles={ styles }>
           <Link to="/">
               <Logo src={logo_default} alt='Dumna Niepodległa Logo' />
