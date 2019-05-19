@@ -7,7 +7,6 @@ import Container from '../layouts/Container';
 import Content from '../layouts/Content';
 import BackgroundImage from 'gatsby-background-image'
 import GalleryPostSix from '../components/GalleryPostSix';
-import { Player } from 'video-react';
 import '../styles/prism';
 
 const SuggestionBar = styled.div`

@@ -4,7 +4,6 @@ import { slide as Menu } from 'react-burger-menu';
 import styled from '@emotion/styled';
 import logo_mobile from '../../static/logo/logo_mobile.svg';
 import logo_default from '../../static/logo/logo_default.svg';
-import { Helmet } from 'react-helmet';
 
 const Div = styled.div`
     position: fixed;
