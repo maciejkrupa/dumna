@@ -1,9 +1,10 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { slide as Menu } from 'react-burger-menu'
-import styled from '@emotion/styled'
-import logo_mobile from '../../static/logo/logo_mobile.svg'
-import logo_default from '../../static/logo/logo_default.svg'
+import React from 'react';
+import { Link } from 'gatsby';
+import { slide as Menu } from 'react-burger-menu';
+import styled from '@emotion/styled';
+import logo_mobile from '../../static/logo/logo_mobile.svg';
+import logo_default from '../../static/logo/logo_default.svg';
+import { Helmet } from 'react-helmet';
 
 const Div = styled.div`
     position: fixed;
@@ -63,7 +64,6 @@ var styles = {
       height: '100%',
       width: '210px',
       zIndex: '3000',
-      paddingBottom: '20%'
     },
     bmMenu: {
         //padding: '2.5em 1.5em 0',
@@ -96,6 +96,10 @@ var styles = {
 
 const NavBarMobile = () => (
     <Div>
+        <Helmet>
+          <meta name="viewport" content="minimum-scale=1" data-react-helmet="true" />
+          <title>Fundacja DUMNA.PL</title>
+        </Helmet>
         <Menu styles={ styles }>
           <Link to="/">
               <Logo src={logo_default} alt='Dumna Niepodległa Logo' />
