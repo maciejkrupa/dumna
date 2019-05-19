@@ -20,9 +20,8 @@ Zapraszamy do odwiedzenia Ogrodu Botanicznego – romantycznego miejsca, w któ
 
 Oddziałem Ogrodu Botanicznego jest Arboretum Wojsławice w Niemczy (50 km na południe od Wrocławia), znane od lat z bogatej kolekcji różaneczników i azalii, rzadkich gatunków drzew i krzewów iglastych i liściastych oraz ogrodu bylinowego z największą w Europie kolekcją liliowców (ponad 3 tys. odmian). Do Arboretum należy też wystawa geologiczna GEOretum, Galeria, w której odbywają się wystawy czasowe, i tereny rekreacyjne z placem zabaw dla dzieci.
 
-[logoOBUW]:
-[logokolekcjenarodowe]:
 
+![Logo Ogrodu](ogrod-logo.png "Logo Title Text 1")
 
 
 | Adres: |
@@ -42,3 +41,7 @@ Otwarty codziennie od 29 marca do 31 października w godz. 9–19, szklarnie i P
 Wystawa paleontologiczna Panorama Natury, obrazująca rozwój przyrody ożywionej od prekambru do czwartorzędu – seanse co pół godziny od 10 do 17.
 
 Działy: systematyki roślin, arboretum, alpinarium, roślin wodnych i bagiennych, gruntowych roślin ozdobnych, edukacji przyrodniczej; szklarnie ekspozycyjne, akwaria. Najcenniejsze kolekcje: tropikalne rośliny słodkowodne, sukulenty, ananasowate, różaneczniki i azalie, gatunki i odmiany bluszczu, rośliny ozdobne.
+
+
+
+![Logo Kolekcji](kolekcje-logo.png "Logo Title Text 1")

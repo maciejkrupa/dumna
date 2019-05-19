@@ -19,12 +19,13 @@ font-family: "Domine";
   margin: 20px
 `
 const Paragraph = styled.p`
+  font-size: 1.5rem;
   margin: 0px;
   color: black;
 `
 
 const Item = styled.a`
-  color: black;
+  color: #ac8d64;
   display: block;
   &:hover {
     color: #ac8d64;

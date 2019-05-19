@@ -50,7 +50,7 @@ const Nav = styled.nav`
 `
 const Logo = styled.img`
     position: relative;
-    width: 80%;
+    width: 70%;
     margin-top: 1rem;
     left: 50%;
     transform: translateX(-50%);
@@ -91,7 +91,7 @@ const NavBar = () => (
                 O Nas
             </Link>
             <br/>
-            <a href='https://sklep5442686.homesklep.pl'>
+            <a href='https://sklep.dumnaniepodlegla.pl'>
                 Sklep
             </a>
             <br/>

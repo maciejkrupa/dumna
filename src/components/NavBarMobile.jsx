@@ -21,7 +21,7 @@ const Div = styled.div`
 
 const Logo = styled.img`
   position: relative;
-  width: 100%;
+  width: 70%;
   margin-top: 1rem;
   transform: scale(0.75);
   outline: 0;
@@ -57,14 +57,15 @@ var styles = {
       background: '#bdc3c7'
     },
     bmMenuWrap: {
+      background: 'linear-gradient(to bottom,#FFFFFF 30%,#F2F2F2)',
+      boxShadow: '0px 3px 10px 0px rgba(0,0,0,0.6)',
       position: 'fixed',
       height: '100%',
-      width: '250px',
+      width: '225px',
       zIndex: '3000',
+      left: '-20px'
     },
     bmMenu: {
-        background: 'linear-gradient(to bottom,#FFFFFF 30%,#F2F2F2)',
-        boxShadow: '0px 3px 10px 0px rgba(0,0,0,0.6)',
         //padding: '2.5em 1.5em 0',
         fontSize: '1.15em',
         zIndex: '3000'
@@ -77,7 +78,8 @@ var styles = {
       fontSize: '1.2rem',
       background: 'transparent',
       textAlign: 'center',
-      paddingTop: '10px'
+      paddingTop: '10px',
+      right: '-5px'
     },
     bmItem: {
       marginTop: '10px',
@@ -107,7 +109,7 @@ const NavBarMobile = () => (
               O Nas
           </Link>
           <br />
-          <a className="nav-link" href='https://sklep5442686.homesklep.pl'>
+          <a className="nav-link" href='https://sklep.dumnaniepodlegla.pl'>
               Sklep
           </a>
           <br />

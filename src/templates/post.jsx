@@ -30,12 +30,15 @@ const PostSuggestion = styled.div`
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
   line-height: 32px;
   max-height: 85px;
+  a {
+    color: #ac8d64;
+  }
 `;
 
 const HeroTitle = styled.h2`
+  text-align: left;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   display: -webkit-box;
