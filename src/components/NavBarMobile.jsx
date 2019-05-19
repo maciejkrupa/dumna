@@ -20,29 +20,28 @@ const Div = styled.div`
 `
 
 const Logo = styled.img`
-    position: relative;
-    width: 70%;
-    margin-top: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0px;
+  position: relative;
+  width: 100%;
+  margin-top: 1rem;
+  transform: scale(0.75);
+  outline: 0;
 `
 
 const LogoMobile = styled.img`
-    position: relative;
-    top: 10px;
-    margin-left: 2rem;
-    width: 120px;
+  position: relative;
+  float: right;
+  bottom: 25px;
+  right: 2rem;
+  width: 120px;
 `
 var styles = {
     bmBurgerButton: {
-        float: 'right',
-        position: 'relative',
-        width: '36px',
-        height: '36px',
-        right: '2rem',
-        top: '12px',
-        zIndex: '2000'
+      zIndex: '2000',
+      position: 'relative',
+      width: '36px',
+      height: '36px',
+      left: '2rem',
+      top: '12px'
     },
     bmBurgerBars: {
       background: '#ac8d64',
@@ -60,13 +59,13 @@ var styles = {
     bmMenuWrap: {
       position: 'fixed',
       height: '100%',
-      width: '220px',
-      zIndex: '3000'
+      width: '250px',
+      zIndex: '3000',
     },
     bmMenu: {
         background: 'linear-gradient(to bottom,#FFFFFF 30%,#F2F2F2)',
         boxShadow: '0px 3px 10px 0px rgba(0,0,0,0.6)',
-        padding: '2.5em 1.5em 0',
+        //padding: '2.5em 1.5em 0',
         fontSize: '1.15em',
         zIndex: '3000'
     },
@@ -74,15 +73,20 @@ var styles = {
       fill: '#373a47'
     },
     bmItemList: {
-      padding: '0.8em',
-      display: 'table-caption',
+      position: 'relative',
+      fontSize: '1.2rem',
+      background: 'transparent',
+      textAlign: 'center',
+      paddingTop: '10px'
     },
     bmItem: {
+      marginTop: '10px',
+      position: 'relative',
+      fontFamily: '"Domine"',
+      color: '#ac8d64',
       display: 'inline-block',
-      paddingTop: '20px',
-      outline:  '0',
-      fontFamily: 'Domine',
-      color: '#ac8d64'
+      outline: '0',
+      textDecoration: 'none'
     },
     bmOverlay: {
       background: 'rgba(0, 0, 0, 0.3)'
@@ -93,26 +97,27 @@ const NavBarMobile = () => (
     <Div>
         <Menu styles={ styles }>
           <Link to="/">
-              <Logo id="logo_default" src={logo_default} alt='Dumna Niepodległa Logo' />
+              <Logo src={logo_default} alt='Dumna Niepodległa Logo' />
           </Link>
-          <Link to='/'>
+          <Link className="nav-link" to='/'>
               Wydarzenia
           </Link>
-          <Link to='/'>
-              O nas
+          <br />
+          <Link className="nav-link" to='/about'>
+              O Nas
           </Link>
-          <Link to='/'>
+          <br />
+          <a className="nav-link" href='http://sklep.dumnaniepodlegla.pl/'>
+              Sklep
+          </a>
+          <br />
+          <Link className="nav-link" to='/contact'>
               Kontakt
           </Link>
-          <Link to='/'>
-              Sklep
-          </Link>
+          <br />
         </Menu>
         <Link to="/">
-          <LogoMobile
-              src={logo_mobile} 
-              alt='Dumna Niepodległa Logo' 
-          />
+          <LogoMobile src={logo_mobile} alt='Dumna Niepodległa Logo'/>
         </Link>
     </Div>
 );

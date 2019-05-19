@@ -4,6 +4,7 @@ import { css, Global } from '@emotion/core';
 import PropTypes from 'prop-types';
 import theme from '../../config/theme';
 import headroom from '../styles/headroom';
+import navbar from '../styles/navbar';
 import NavBarMobile from '../components/NavBarMobile';
 import NavBar from '../components/NavBar';
 import Spacer from '../components/Spacer';
@@ -66,6 +67,7 @@ const Layout = ({ children }) => (
           .gatsby-resp-image-wrapper {
             margin-left: 0px;
           }
+          ${navbar};
           ${headroom};
         `}
       />

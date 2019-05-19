@@ -28,32 +28,34 @@ const Nav = styled.nav`
         width: 100%;
         display: inline-block;
         overflow: hidden;
-        &:hover {
-        }
-        div {
-            position: relative;
-            height: 1px;
-            width: 0%;
-            top: 0px;
-            left: 50%;
-            background-color: #dc2830;
-            transition: all 0.45s ease-out;
-        }
-        &:hover>div {
+        text-decoration: none;
+        &:before {
+            content: "";
+            position: absolute;
             width: 100%;
-            left: 0%;
-            background-color: #dc2830;
-            transition: all 0.45s ease-out;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #E30613;
+            visibility: hidden;
+            transition: all 0.45s ease-in-out 0s;
+            transform: scaleX(0);
+        }
+        &:hover:before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
         }
     }
 `
 const Logo = styled.img`
     position: relative;
-    width: 70%;
+    width: 80%;
     margin-top: 1rem;
     left: 50%;
     transform: translateX(-50%);
     top: 0px;
+    margin-bottom: 2rem;
 `
 
 const Pinned = function() {
@@ -77,28 +79,24 @@ const NavBar = () => (
         pinAnchor={0}
         hideAnchor={0}
     >
-        <Link id="main-header-logo" to="/">
+        <Link to="/">
             <Logo id="logo_default" src={logo_default} alt='Dumna Niepodległa Logo' />
         </Link>
         <Nav id="nav">  
             <Link to='/'>
                 Wydarzenia
-                <div />
             </Link>
             <br/>
             <Link to='/about'>
-                O nas
-                <div />
+                O Nas
             </Link>
             <br/>
             <a href='http://sklep.dumnaniepodlegla.pl/'>
                 Sklep
-                <div />
             </a>
             <br/>
             <Link to='/contact'>
                 Kontakt
-                <div />
             </Link>
             <br/>
         </Nav>

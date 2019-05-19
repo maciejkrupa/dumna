@@ -3,7 +3,10 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
 const Wrapper = styled.section`
-  text-align: ${props => (props.center ? 'center' : '')};
+  text-align: justify;
+  text-justify: inter-word;
+  text-align: ${props => (props.justify ? 'justify' : '')};
+  text-align: ${props => (props.interWord ? 'inter-word' : '')};
   width: 100%;
   height: 100%;
   padding: 2rem 4rem 2rem 2rem;
