@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import PostList from '../components/PostList';
 import Layout from '../layouts/Layout';
+import Helmet from 'react-helmet';
 
 const PostWrapper = styled.div`
   display: flex;
@@ -20,6 +21,7 @@ const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
+      <Helmet title={'DUMNA.PL Fundacja'} />
       <PostWrapper>
         {edges.map(({ node }) => (
           <PostList

@@ -17,6 +17,10 @@ const Wrapper = styled.div`
       margin: 0.5rem 0;
     }
   }
+  .gatsby-image-wrapper {
+    @media screen and (min-width: 1000px)
+      height: 300px;
+  }
   .gatsby-resp-image-wrapper {
     margin-left: 0 !important;
   }
