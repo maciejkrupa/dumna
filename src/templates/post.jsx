@@ -49,8 +49,8 @@ const HeroTitle = styled.h2`
   color: #fff;
   left: 2%;
   top: 83%;
-  font-size: 1.2rem;
   z-index: 100;
+  font-size: 1.2rem;
   @media screen and (min-width: 700px) {
     font-size: 1.5rem;
   }

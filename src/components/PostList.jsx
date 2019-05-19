@@ -113,7 +113,14 @@ const Title = styled.h2`
   text-overflow: ellipsis;
   display: -webkit-box;
   line-height: 32px;       
-  max-height: 64px;      
+  max-height: 64px;    
+  font-size: 1.2rem;
+  @media screen and (min-width: 700px) {
+    font-size: 1.5rem;
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 1.8rem;
+  }  
 `;
 
 const PostList = ({ hero, path, title }) => (
