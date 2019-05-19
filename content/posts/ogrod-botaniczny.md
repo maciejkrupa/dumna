@@ -24,18 +24,30 @@ Oddziałem Ogrodu Botanicznego jest Arboretum Wojsławice w Niemczy (50 km na po
 
 ![Logo Kolekcji](kolekcje-logo.png "Logo Title Text 1")
 
+---
 
 **Adres:**
+
 Ogród Botaniczny Uniwersytetu Wrocławskiego
+
 ul. Sienkiewicza 23
+
 50-335 Wrocław
+
 tel. (71) 322 59 57
+
 fax (71) 322 44 83
+
 e-mail: ob@uwr.edu.pl
+
 strona internetowa: www.ogrodbotaniczny.wroclaw.pl 
 
+---
+
 Kasy: od ul. Sienkiewicza i Kanonii.
+
 Dojazd autobusami: A, C, N, 111, 128, tramwajami: 2, 6, 8, 9, 10, 11, 17, 23.
+
 Otwarty codziennie od 29 marca do 31 października w godz. 9–19, szklarnie i Panorama Natury 10–18.
 
 Wystawa paleontologiczna Panorama Natury, obrazująca rozwój przyrody ożywionej od prekambru do czwartorzędu – seanse co pół godziny od 10 do 17.
