@@ -31,7 +31,7 @@ const PostSuggestion = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 32px;
-  max-height: 85px;
+  max-height: 150px;
   a {
     color: #ac8d64;
   }
@@ -140,7 +140,7 @@ const Post = ({ data, pageContext }) => {
           <PostSuggestion>
             {prev && (
               <Link to={prev.frontmatter.path}>
-                Previous
+                Poprzednie
                 <h3>{prev.frontmatter.title}</h3>
               </Link>
             )}
@@ -148,7 +148,7 @@ const Post = ({ data, pageContext }) => {
           <PostSuggestion>
             {next && (
               <Link to={next.frontmatter.path}>
-                Next
+                Następne
                 <h3>{next.frontmatter.title}</h3>
               </Link>
             )}
