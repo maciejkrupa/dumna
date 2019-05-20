@@ -23,6 +23,9 @@ const Layout = ({ children }) => (
             box-sizing: inherit;
           }
           html {
+            @media screen and (min-width: 1000px) {
+              overflow: initial !important;
+            }
             text-rendering: optimizeLegibility;
             overflow-x: hidden;
             box-sizing: border-box;
