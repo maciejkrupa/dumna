@@ -41,7 +41,7 @@ var styles = {
       width: '36px',
       height: '35px',
       left: '2rem',
-      top: '12px'
+      top: '14px'
     },
     bmBurgerBars: {
       background: '#ac8d64',
