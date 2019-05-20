@@ -95,51 +95,60 @@ var styles = {
     }
   }
 
-const isMenuOpen = function(state) {;
-  let html = document.documentElement
-  if(state.isOpen === true) {
-      html.style = 'overflow: hidden';
+class NavBarMobile extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      menuOpen: false
+    }
   }
-  if(state.isOpen === false) {
-      html.style = 'overflow: initial';
-  }
-}
-
-const NavBarMobile = () => {
-  if(typeof document !== "undefined") {
+  handleStateChange (state) {
     let html = document.documentElement
-    if(html.style.overflow === 'hidden') {
+    this.setState({menuOpen: state.isOpen})  
+    if(state.isOpen === true) {
+      html.style = 'overflow: hidden';
+    }
+    if(state.isOpen === false) {
       html.style = 'overflow: initial';
     }
   }
-  return (
-    <Div>
-        <Menu styles={ styles } onStateChange={ isMenuOpen }>
+  closeMenu () {
+    this.setState({menuOpen: false})
+  }
+  render() {
+    return (
+      <Div>
+          <Menu 
+            styles={ styles } 
+            isOpen={this.state.menuOpen}
+            onStateChange={(state) => this.handleStateChange(state)}
+          >
+            <Link onClick={() => this.closeMenu()} to="/">
+                <Logo src={logo_default} alt='Dumna Niepodległa Logo' />
+            </Link>
+            <Link onClick={() => this.closeMenu()} className="nav-link" to='/'>
+                Wydarzenia
+            </Link>
+            <br />
+            <Link onClick={() => this.closeMenu()} className="nav-link" to='/about'>
+                O Nas
+            </Link>
+            <br />
+            <a onClick={() => this.closeMenu()} className="nav-link" href='https://sklep.dumnaniepodlegla.pl'>
+                Sklep
+            </a>
+            <br />
+            <Link onClick={() => this.closeMenu()} className="nav-link" to='/contact'>
+                Kontakt
+            </Link>
+            <br />
+          </Menu>
           <Link to="/">
-              <Logo src={logo_default} alt='Dumna Niepodległa Logo' />
+            <LogoMobile src={logo_mobile} alt='Dumna Niepodległa Logo'/>
           </Link>
-          <Link className="nav-link" to='/'>
-              Wydarzenia
-          </Link>
-          <br />
-          <Link className="nav-link" to='/about'>
-              O Nas
-          </Link>
-          <br />
-          <a className="nav-link" href='https://sklep.dumnaniepodlegla.pl'>
-              Sklep
-          </a>
-          <br />
-          <Link className="nav-link" to='/contact'>
-              Kontakt
-          </Link>
-          <br />
-        </Menu>
-        <Link to="/">
-          <LogoMobile src={logo_mobile} alt='Dumna Niepodległa Logo'/>
-        </Link>
-    </Div>
-  )
+      </Div>
+    )
+  }
 };
 
 export default NavBarMobile
