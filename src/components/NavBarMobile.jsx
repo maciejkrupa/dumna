@@ -106,7 +106,7 @@ const isMenuOpen = function(state) {;
 }
 
 const NavBarMobile = () => {
-  if (document.readyState === 'complete') {
+  if(typeof document !== "undefined") {
     let html = document.documentElement
     if(html.style.overflow === 'hidden') {
       html.style = 'overflow: initial';
