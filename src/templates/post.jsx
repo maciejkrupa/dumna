@@ -33,8 +33,8 @@ const PostSuggestion = styled.div`
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
-      line-height: 25px;
-      max-height: 75px;
+      line-height: 26px;
+      max-height: 78px;
       display: -webkit-box;
       font-size: 1rem;
       @media screen and (min-width: 700px) {
@@ -96,19 +96,19 @@ const Post = ({ data, pageContext }) => {
     return (
       <Layout>
         <Container>
-        <BackgroundImage 
+          <BackgroundImage 
             Tag="section"
             fluid={hero}
             style={{
-              height: `420px`,
-              width: `100%`,
-              boxShadow: `0px 3px 10px 0px rgba(0, 0, 0, 0.6) `,
-              marginBottom: `20px`,
-              }} >
-              <TitleWrap>
-                <HeroTitle>{title}</HeroTitle>
-              </TitleWrap>
-              <HeroWrap />
+            height: `420px`,
+            width: `100%`,
+            boxShadow: `0px 3px 10px 0px rgba(0, 0, 0, 0.6) `,
+            marginBottom: `20px`,}}
+          >
+            <TitleWrap>
+              <HeroTitle>{title}</HeroTitle>
+            </TitleWrap>
+            <HeroWrap />
           </BackgroundImage>
           <Content input={html} />
           <GalleryPostSix />
@@ -142,15 +142,15 @@ const Post = ({ data, pageContext }) => {
             Tag="section"
             fluid={hero}
             style={{
-              height: `420px`,
-              width: `100%`,
-              boxShadow: `0px 3px 10px 0px rgba(0, 0, 0, 0.6) `,
-              marginBottom: `20px`,
-              }} >
-              <TitleWrap>
-                <HeroTitle>{title}</HeroTitle>
-              </TitleWrap>
-              <HeroWrap />
+            height: `420px`,
+            width: `100%`,
+            boxShadow: `0px 3px 10px 0px rgba(0, 0, 0, 0.6) `,
+            marginBottom: `20px`,}} 
+          >
+            <TitleWrap>
+              <HeroTitle>{title}</HeroTitle>
+            </TitleWrap>
+            <HeroWrap />
           </BackgroundImage>
           <Content input={html} />
         </Container>
