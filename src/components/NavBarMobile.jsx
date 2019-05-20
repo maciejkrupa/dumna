@@ -39,12 +39,13 @@ var styles = {
       zIndex: '2000',
       position: 'relative',
       width: '36px',
-      height: '36px',
+      height: '35px',
       left: '2rem',
       top: '12px'
     },
     bmBurgerBars: {
       background: '#ac8d64',
+      height: '15%'
     },
     bmBurgerBarsHover: {
       background: '#a90000'
