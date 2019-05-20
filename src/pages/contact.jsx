@@ -6,7 +6,10 @@ import Layout from '../layouts/Layout';
 import Container from '../layouts/Container';
 
 const Text = styled.div`
-  padding-top: 10rem;
+  padding-top: 0;
+  @media screen and (min-width: 1000px) {
+    padding-top: 10rem;
+  }
   margin: 0;
   padding-bottom: 2rem;
   text-align: center;
