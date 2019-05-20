@@ -63,6 +63,7 @@ var styles = {
       height: '100%',
       width: '210px',
       zIndex: '3000',
+      boxSizing: 'border-box'
     },
     bmMenu: {
         //padding: '2.5em 1.5em 0',
@@ -89,7 +90,8 @@ var styles = {
       textDecoration: 'none'
     },
     bmOverlay: {
-      background: 'rgba(0, 0, 0, 0.3)'
+      background: 'rgba(0, 0, 0, 0.3)',
+      boxSizing: 'border-box'
     }
   }
 
