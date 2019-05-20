@@ -6,7 +6,6 @@ import Layout from '../layouts/Layout';
 import Container from '../layouts/Container';
 
 const AboutTxt = styled.h3`
-
 `
 const StyledParagraph = styled.p`
   font-family: Open Sans,sans-serif;

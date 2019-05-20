@@ -95,23 +95,28 @@ var styles = {
     }
   }
 
-const isMenuOpen = function(state) {
-  let html = document.documentElement;
+let html = document.documentElement
+
+const isMenuOpen = function(state) {;
   if(state.isOpen === true) {
       html.style = 'overflow: hidden';
   }
   if(state.isOpen === false) {
       html.style = 'overflow: initial';
   }
-};
+}
 
-const NavBarMobile = () => (
+const NavBarMobile = () => {
+  if(html.style.overflow === 'hidden') {
+    html.style = 'overflow: initial';
+  }
+  return (
     <Div>
         <Menu styles={ styles } onStateChange={ isMenuOpen }>
           <Link to="/">
               <Logo src={logo_default} alt='Dumna Niepodległa Logo' />
           </Link>
-          <Link className="nav-link" to='/'>
+          <Link to='/'>
               Wydarzenia
           </Link>
           <br />
@@ -132,6 +137,7 @@ const NavBarMobile = () => (
           <LogoMobile src={logo_mobile} alt='Dumna Niepodległa Logo'/>
         </Link>
     </Div>
-);
+  )
+};
 
 export default NavBarMobile
