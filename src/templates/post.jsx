@@ -34,6 +34,15 @@ const PostSuggestion = styled.div`
   max-height: 150px;
   a {
     color: #ac8d64;
+    h3 {
+      font-size: 1rem;
+      @media screen and (min-width: 700px) {
+        font-size: 1.2rem;
+      }
+      @media screen and (min-width: 1000px) {
+        font-size: 1.4rem;
+      }
+    }
   }
 `;
 
