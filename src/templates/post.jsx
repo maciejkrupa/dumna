@@ -25,16 +25,17 @@ const SuggestionBar = styled.div`
 const PostSuggestion = styled.div`
   display: flex;
   width: 50%;
-  align-items: center;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 32px;
-  max-height: 150px;
+  text-align: left;
   a {
     color: #ac8d64;
     h3 {
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 25px;
+      max-height: 75px;
+      display: -webkit-box;
       font-size: 1rem;
       @media screen and (min-width: 700px) {
         font-size: 1.2rem;
