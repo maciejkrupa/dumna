@@ -41,7 +41,6 @@ const Layout = ({ children }) => (
             background: #f0f0f0;
           }
           body {
-            overflow-y: hidden;
             display: flex;
             height: 100%;
             margin: 0;

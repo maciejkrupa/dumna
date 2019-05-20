@@ -62,7 +62,8 @@ var styles = {
       position: 'fixed',
       height: '100%',
       width: '210px',
-      zIndex: '3000'
+      zIndex: '3000',
+      left: '-6px'
     },
     bmMenu: {
         //padding: '2.5em 1.5em 0',
@@ -93,9 +94,19 @@ var styles = {
     }
   }
 
+const isMenuOpen = function(state) {
+  let html = document.documentElement;
+  if(state.isOpen === true) {
+      html.style = 'overflow: hidden';
+  }
+  if(state.isOpen === false) {
+      html.style = 'overflow: initial';
+  }
+};
+
 const NavBarMobile = () => (
     <Div>
-        <Menu styles={ styles }>
+        <Menu styles={ styles } onStateChange={ isMenuOpen }>
           <Link to="/">
               <Logo src={logo_default} alt='Dumna Niepodległa Logo' />
           </Link>
