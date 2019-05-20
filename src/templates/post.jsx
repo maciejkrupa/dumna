@@ -75,8 +75,6 @@ const TitleWrap = styled.div`
   margin-left: 22px;
 `
 
-
-
 const Post = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
   const post = data.markdownRemark;
