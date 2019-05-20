@@ -118,7 +118,7 @@ const NavBarMobile = () => {
           <Link to="/">
               <Logo src={logo_default} alt='Dumna Niepodległa Logo' />
           </Link>
-          <Link to='/'>
+          <Link className="nav-link" to='/'>
               Wydarzenia
           </Link>
           <br />
