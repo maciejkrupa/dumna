@@ -95,9 +95,8 @@ var styles = {
     }
   }
 
-let html = document.documentElement
-
 const isMenuOpen = function(state) {;
+  let html = document.documentElement
   if(state.isOpen === true) {
       html.style = 'overflow: hidden';
   }
@@ -107,6 +106,7 @@ const isMenuOpen = function(state) {;
 }
 
 const NavBarMobile = () => {
+  let html = document.documentElement
   if(html.style.overflow === 'hidden') {
     html.style = 'overflow: initial';
   }
