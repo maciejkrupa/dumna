@@ -28,6 +28,9 @@ const headroom = css`
   .headroom--pinned {
     transform: translateY(0%);
   }
+  .gatsby-resp-iframe-wrapper {
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 10px 0px;
+  }
 `
 
 export default headroom;

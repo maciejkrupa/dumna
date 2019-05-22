@@ -10,3 +10,14 @@ title: "Przedstawienia „Zawsze na Przedzie”"
 Sztuka teatralna "Zawsze na Przedzie" przeznaczona jest dla dzieci i młodzieży oraz osób dorosłych, nawiązuje ona do wydarzeń związanych z Odzyskaniem Niepodległości przez Polskę z pierwszoplanowym udziałem Marszałka Józefa Piłsudskiego
 
 W 2018 roku wystawiliśmy w całym kraju 20 spektakli. Naszymi odbiorcami były zarówno osoby starsze przebywające w domu opieki, jak i młodzież klas mundurowych w Żaganiu.
+
+
+<iframe width="1280" height="480" src="https://www.youtube.com/embed/zK_ghbR7E98" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+
+
+<br/>
+<br/>
+
+
+###Galeria
