@@ -1,4 +1,7 @@
 var plugins = [{
+      plugin: require('D:/web/gatsby/dumna/node_modules/gatsby-mdx/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('D:/web/gatsby/dumna/node_modules/gatsby-plugin-typography/gatsby-ssr'),
       options: {"plugins":[],"pathToConfigModule":"src/utils/typography"},
     },{

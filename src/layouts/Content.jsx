@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import prism from '../styles/prism';
+import MDXRenderer from "gatsby-mdx/mdx-renderer";
 
 const Wrapper = styled.div`
   ${prism};
@@ -63,7 +64,9 @@ const Wrapper = styled.div`
 `;
 
 const Content = ({ input }) => (
-  <Wrapper dangerouslySetInnerHTML={{ __html: input }} />
+  <Wrapper>
+    <MDXRenderer>{input}</MDXRenderer>
+  </Wrapper>
 );
 
 export default Content;

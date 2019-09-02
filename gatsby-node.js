@@ -1,20 +1,18 @@
 const path = require('path');
-
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
-
   return new Promise((resolve, reject) => {
     const postTemplate = path.resolve('src/templates/post.jsx');
-
     resolve(
       graphql(
         `
-          query {
-            allMarkdownRemark(
+          {
+            allMdx(
               sort: { order: ASC, fields: [frontmatter___order] }
             ) {
               edges {
                 node {
+                  id
                   frontmatter {
                     path
                     title
@@ -28,7 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
         if (result.errors) {
           return reject(result.errors);
         }
-        const posts = result.data.allMarkdownRemark.edges;
+        const posts = result.data.allMdx.edges;
         posts.forEach(({ node }, index) => {
           const path = node.frontmatter.path;
           const prev = index === 0 ? null : posts[index - 1].node;
@@ -37,7 +35,7 @@ exports.createPages = ({ graphql, actions }) => {
             path,
             component: postTemplate,
             context: {
-              pathSlug: path,
+              id: node.id,
               prev,
               next,
             },

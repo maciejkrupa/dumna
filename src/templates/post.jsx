@@ -6,7 +6,6 @@ import Layout from '../layouts/Layout';
 import Container from '../layouts/Container';
 import Content from '../layouts/Content';
 import BackgroundImage from 'gatsby-background-image'
-import GalleryPostSix from '../components/GalleryPostSix';
 import '../styles/prism';
 
 const SuggestionBar = styled.div`
@@ -85,97 +84,51 @@ const TitleWrap = styled.div`
   margin-left: 22px;
 `
 
-const Post = ({ data, pageContext }) => {
+function Post({ data: { mdx }, pageContext }) {
   const { next, prev } = pageContext;
-  const post = data.markdownRemark;
-  const hero = post.frontmatter.hero.childImageSharp.fluid;
-  const title = post.frontmatter.title;
-  const order = post.frontmatter.order;
-  const html = post.html;
-  if(order === "6"){
-    return (
-      <Layout>
-        <Container>
-          <BackgroundImage 
-            Tag="section"
-            fluid={hero}
-            style={{
-            height: `420px`,
-            width: `100%`,
-            boxShadow: `0px 3px 10px 0px rgba(0, 0, 0, 0.6) `,
-            marginBottom: `20px`,}}
-          >
-            <TitleWrap>
-              <HeroTitle>{title}</HeroTitle>
-            </TitleWrap>
-            <HeroWrap />
-          </BackgroundImage>
-          <Content input={html} />
-          <GalleryPostSix />
-        </Container>
-        <SuggestionBar>
-          <PostSuggestion>
-            {prev && (
-              <Link to={prev.frontmatter.path}>
-                Poprzednie
-                <h3>{prev.frontmatter.title}</h3>
-              </Link>
-            )}
-          </PostSuggestion>
-          <PostSuggestion>
-            {next && (
-              <Link to={next.frontmatter.path}>
-                Następne
-                <h3>{next.frontmatter.title}</h3>
-              </Link>
-            )}
-          </PostSuggestion>
-        </SuggestionBar>
-      </Layout>
-    )
-  } 
-  else {
-    return (
-      <Layout>
-        <Container>
-          <BackgroundImage 
-            Tag="section"
-            fluid={hero}
-            style={{
-            height: `420px`,
-            width: `100%`,
-            boxShadow: `0px 3px 10px 0px rgba(0, 0, 0, 0.6) `,
-            marginBottom: `20px`,}} 
-          >
-            <TitleWrap>
-              <HeroTitle>{title}</HeroTitle>
-            </TitleWrap>
-            <HeroWrap />
-          </BackgroundImage>
-          <Content input={html} />
-        </Container>
-        <SuggestionBar>
-          <PostSuggestion>
-            {prev && (
-              <Link to={prev.frontmatter.path}>
-                Poprzednie
-                <h3>{prev.frontmatter.title}</h3>
-              </Link>
-            )}
-          </PostSuggestion>
-          <PostSuggestion>
-            {next && (
-              <Link to={next.frontmatter.path}>
-                Następne
-                <h3>{next.frontmatter.title}</h3>
-              </Link>
-            )}
-          </PostSuggestion>
-        </SuggestionBar>
-      </Layout>
-    )
-  }
-}
+  const hero = mdx.frontmatter.hero.childImageSharp.fluid;
+  const title = mdx.frontmatter.title;
+  const content = mdx.code.body;
+  return (
+    <Layout>
+      <Container>
+        <BackgroundImage 
+          Tag="section"
+          fluid={hero}
+          style={{
+          height: `420px`,
+          width: `100%`,
+          boxShadow: `0px 3px 10px 0px rgba(0, 0, 0, 0.6) `,
+          marginBottom: `20px`,}}
+        >
+          <TitleWrap>
+            <HeroTitle>{title}</HeroTitle>
+          </TitleWrap>
+          <HeroWrap />
+        </BackgroundImage>
+        <Content input={content} />
+      </Container>
+      <SuggestionBar>
+        <PostSuggestion>
+          {prev && (
+            <Link to={prev.frontmatter.path}>
+              Poprzednie
+              <h3>{prev.frontmatter.title}</h3>
+            </Link>
+          )}
+        </PostSuggestion>
+        <PostSuggestion>
+          {next && (
+            <Link to={next.frontmatter.path}>
+              Następne
+              <h3>{next.frontmatter.title}</h3>
+            </Link>
+          )}
+        </PostSuggestion>
+      </SuggestionBar>
+    </Layout>
+  )
+} 
 
 export default Post;
 
@@ -188,12 +141,14 @@ Post.propTypes = {
 };
 
 export const query = graphql`
-  query($pathSlug: String!) {
-    markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
-      html
+  query BlogPostQuery($id: String) {
+    mdx(id: { eq: $id }) {
+      id
+      code {
+        body
+      }
       frontmatter {
         title
-        order
         hero {
           childImageSharp {
             fluid(

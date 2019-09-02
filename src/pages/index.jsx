@@ -18,7 +18,7 @@ const PostWrapper = styled.div`
 `;
 
 const Index = ({ data }) => {
-  const { edges } = data.allMarkdownRemark;
+  const { edges } = data.allMdx;
   return (
     <Layout>
       <Helmet title={'DUMNA.PL Fundacja'} />
@@ -40,7 +40,7 @@ export default Index;
 
 Index.propTypes = {
   data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
+    allMdx: PropTypes.shape({
       edges: PropTypes.arrayOf(
         PropTypes.shape({
           node: PropTypes.shape({
@@ -59,7 +59,7 @@ Index.propTypes = {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(
+    allMdx(
       limit: 7
       sort: { order: ASC, fields: [frontmatter___order] }
     ) {
@@ -69,7 +69,6 @@ export const query = graphql`
           excerpt(pruneLength: 75)
           frontmatter {
             title
-            order
             path
             hero {
               childImageSharp {
