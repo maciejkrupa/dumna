@@ -88,7 +88,7 @@ function Post({ data: { mdx }, pageContext }) {
   const { next, prev } = pageContext;
   const hero = mdx.frontmatter.hero.childImageSharp.fluid;
   const title = mdx.frontmatter.title;
-  const content = mdx.code.body;
+  const content = mdx.body;
   return (
     <Layout>
       <Container>
@@ -144,9 +144,7 @@ export const query = graphql`
   query BlogPostQuery($id: String) {
     mdx(id: { eq: $id }) {
       id
-      code {
-        body
-      }
+      body
       frontmatter {
         title
         hero {

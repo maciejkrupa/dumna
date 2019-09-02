@@ -2,7 +2,7 @@ module.exports = [{
       plugin: require('D:/web/gatsby/dumna/node_modules/gatsby-plugin-catch-links/gatsby-browser.js'),
       options: {"plugins":[]},
     },{
-      plugin: require('D:/web/gatsby/dumna/node_modules/gatsby-mdx/gatsby-browser.js'),
+      plugin: require('D:/web/gatsby/dumna/node_modules/gatsby-plugin-mdx/gatsby-browser.js'),
       options: {"plugins":[]},
     },{
       plugin: require('D:/web/gatsby/dumna/node_modules/gatsby-remark-images/gatsby-browser.js'),
