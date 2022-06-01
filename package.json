@@ -41,7 +41,7 @@
     "react-photo-gallery": "^7.0.2",
     "react-typography": "^0.16.19",
     "redux": "^4.0.1",
-    "sharp": "^0.22.1",
+    "sharp": "^0.30.5",
     "typography": "^0.16.19",
     "typography-theme-alton": "^0.16.19",
     "video-react": "^0.13.7",
